@@ -11,8 +11,9 @@ $(document).ready(function() {
 function initializePage() {
 	$("#testjs").click(function(e) {
 		$('.jumbotron h1').text("Javascript is connected");
-		$(this).text("Try Again");
+		$(this).text("Change Background");
 		$(".jumbotron p").toggleClass("active");
+		$("body").toggleClass("backA backB");
 	});
 
 	// Add any additional listeners here
